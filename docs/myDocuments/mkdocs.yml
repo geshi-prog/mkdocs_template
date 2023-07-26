@@ -1,0 +1,29 @@
+site_name: メモ
+nav:
+  - Home: index.md
+  - MkDocsの例: example.md
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: deep purple
+  features:
+    - navigation.top
+plugins:
+  search:
+    lang: 'ja'
+extra:
+  generator: false
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight:
+  - pymdownx.tabbed:
+      alternate_style: true
+
+# コードのハイライト用jsとcssは→https://cdnjs.com/libraries/highlight.js
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js
+  - javascripts/config.js
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/base16/brush-trees-dark.min.css

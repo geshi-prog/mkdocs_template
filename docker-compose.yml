@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./docs:/app
+    command: /bin/bash -c "cd /app/myDocuments && /usr/local/bin/mkdocs serve --dev-addr=0.0.0.0:8000"
